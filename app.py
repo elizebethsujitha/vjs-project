@@ -14,5 +14,10 @@ def about():
 def contact():
     return render_template('contact.html')
 
+
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
 if __name__=='__main__':
     app.run(debug=True)
